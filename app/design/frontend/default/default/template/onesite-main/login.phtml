@@ -1,0 +1,19 @@
+<?php
+/**
+ * ONEsite Magento Login page.
+ *
+ */
+
+
+echo $this->getLayout()->createBlock(
+    'sso/sociallogin', 'onesite_sso_login')
+        ->setSize('large')
+        ->setLabelText('')
+        ->setOnDomReady('openmodal')
+        ->setView('modal')
+        ->setReloadWidget('no')
+        ->toHtml();
+
+?>
+
+<div>Please login or create an account using the link in the toolbar.</div>

@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <onesite translate="label">
+            <label>Onesite</label>
+            <sort_order>250</sort_order>
+        </onesite>
+    </tabs>
+    <sections>
+        <sso translate="label" module="sso">
+            <label>SSO</label>
+            <tab>onesite</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <options translate="label">
+                    <label>Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                         <apikey translate="label">
+                            <label>ONEsite API Devkey</label>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>Onesite_SSO_Adminhtml_Model_Field</backend_model>
+                            <comment><![CDATA[Please enter your API Devkey]]>
+                            </comment>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </apikey>
+                        <widgetkey translate="label">
+                            <label>ONEsite Widget Key</label>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>Onesite_SSO_Adminhtml_Model_Field</backend_model>
+                            <comment><![CDATA[Please enter your widget key.]]>
+                            </comment>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </widgetkey>
+                        <node_domain translate="label">
+                            <label>ONEsite Node Domain</label>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>Onesite_SSO_Adminhtml_Model_Field</backend_model>
+                            <comment><![CDATA[Please enter your node domain, e.g. mysite.onesite.com.]]>
+                            </comment>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </node_domain>
+                        <node_id translate="label">
+                            <label>ONEsite Node ID</label>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>Onesite_SSO_Adminhtml_Model_Field</backend_model>
+                            <comment><![CDATA[This is your node's primary identifier.]]>
+                            </comment>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </node_id>
+                        <partner_id translate="label">
+                            <label>ONEsite Partner ID</label>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>Onesite_SSO_Adminhtml_Model_Field</backend_model>
+                            <comment><![CDATA[Enter your Partner ID if you know it (optional).]]>
+                            </comment>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </partner_id>
+                        <widget_url translate="label">
+                            <label>Widget Serving Domain</label>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>Onesite_SSO_Adminhtml_Model_Field</backend_model>
+                            <comment><![CDATA[Custom URL to load widgets from (optional).]]>
+                            </comment>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </widget_url>
+                        <element_url translate="label">
+                            <label>Element Serving Domain</label>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>Onesite_SSO_Adminhtml_Model_Field</backend_model>
+                            <comment><![CDATA[Custom URL to load elements from (optional).]]>
+                            </comment>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </element_url>
+                        <enable_debugging translate="label">
+                            <label>Enable Debugging/Logging</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <default>0</default>
+                            <comment><![CDATA[Enabling debugging will log data to the Magento debugging system.]]>
+                            </comment>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </enable_debugging>
+                    </fields>
+                </options>
+                <info translate="label">
+                    <label>About Onesite</label>
+                    <frontend_type>text</frontend_type>
+                    <frontend_model>sso/about</frontend_model>
+                    <sort_order>60</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </info>
+                <!-- Frame global uneditable config variables -->
+                <vars translate="label">
+                    <label>Global Variables</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>50</sort_order>
+                    <show_in_default>0</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                    </fields>
+                </vars>
+            </groups>
+        </sso>
+    </sections>
+</config>

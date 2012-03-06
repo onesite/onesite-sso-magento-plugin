@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<widgets>
+    <sso_sociallogin type="sso/sociallogin" translate="name description" module="sso">
+        <name>ONEsite Social Login</name>
+        <description type="desc">Loads the Social Login module</description>
+        <parameters>
+            <label_text>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Label Text</label>
+                <description>The text to display before login button. Defaults to 'Or log in with'</description>
+                <type>text</type>
+            </label_text>
+            <size>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Widget Style</label>
+                <type>select</type>
+                <value>large</value>
+                <values>
+                    <default translate="label">
+                        <value>large</value>
+                        <label>Large Icons</label>
+                    </default>
+                    <small translate="label">
+                        <value>small</value>
+                        <label>Small Icons</label>
+                    </small>
+                    <inline translate="label">
+                        <value>inline</value>
+                        <label>Inline</label>
+                    </inline>
+                </values>
+            </size>
+            <view>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Widget View</label>
+                <type>select</type>
+                <value>modal</value>
+                <values>
+                    <default translate="label">
+                        <value>modal</value>
+                        <label>Modal View</label>
+                    </default>
+                    <links translate="label">
+                        <value>links</value>
+                        <label>Links Only</label>
+                    </links>
+                </values>
+            </view>
+            <reload_widget>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Reload the Widget?</label>
+                <description>If you have the widget loaded in the toolbar you may not need to reload the widget</description>
+                <type>select</type>
+                <value>yes</value>
+                <values>
+                    <yes translate="label">
+                        <value>yes</value>
+                        <label>Yes</label>
+                    </yes>
+                    <no translate="label">
+                        <value>no</value>
+                        <label>No</label>
+                    </no>
+                </values>
+            </reload_widget>
+            <on_dom_ready>
+                <required>0</required>
+                <visible>1</visible>
+                <label>JS OnReady Callback</label>
+                <description>A JS method you want to call when Social Login is ready. 'openmodal' will cause it to pop open</description>
+                <type>text</type>
+            </on_dom_ready>
+        </parameters>
+    </sso_sociallogin>
+    <sso_review type="sso/review" translate="name description" module="sso">
+        <name>ONEsite Review Widget</name>
+        <description type="desc">Loads the Product Review widget</description>
+        <parameters>
+            <label_text>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Label Text</label>
+                <description>The text to display on top of the widget</description>
+                <type>text</type>
+            </label_text>
+        </parameters>
+    </sso_review>
+</widgets>
