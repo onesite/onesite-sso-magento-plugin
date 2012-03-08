@@ -134,7 +134,6 @@ class onesite_sdk
 		require_once($this->_path . "/sdk/api/sessionApi.php");
 		require_once($this->_path . "/sdk/api/userApi.php");
 		require_once($this->_path . "/sdk/dao/session.php");
-		require_once($this->_path . "/sdk/api/userApi.php");
 		require_once($this->_path . "/sdk/dao/user.php");
 		
 		return new onesite_sdk_api_sessionApi(

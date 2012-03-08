@@ -34,7 +34,7 @@ class Onesite_SSO_Helper_Setup extends Mage_Core_Helper_Abstract
 	public function runIntegrationSetup($url, $params = null, $method = 'POST')
 	{
 		Mage::log("Running integration setup");
-		$url = "http://preprodservices/rest/svcIntegration?action=getInfo&output=json";
+		$url = "http://services.onesite.com/rest/svcIntegration?action=getInfo&output=json";
 		
 		$response = Mage::helper('sso/api')->runAPI($url, $params);
 		return $response;

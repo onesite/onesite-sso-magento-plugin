@@ -41,6 +41,7 @@ class Onesite_SSO_Helper_Widgets extends Mage_Core_Helper_Abstract
 		$custom_url = Mage::getStoreConfig('sso/options/widget_url');
 		$base_url = !empty($custom_url) ? $custom_url : "http://widgets.onesite.com";
 		$config_id = isset($options['config_id']) ? $options['config_id'] : '';
+		$callback_url = Mage::getUrl('onesite/integration/connection');
 		
 		$jsWidgetOptions = '';
 
@@ -60,7 +61,7 @@ class Onesite_SSO_Helper_Widgets extends Mage_Core_Helper_Abstract
 {$jsWidgetOptions}
 
   // DO NOT CHANGE BELOW THIS LINE.
-  var widgetURL = "{$base_url}/js/{$widget_name}?one_widget_node={$node_dom}&devkey={$widgetkey}&partner={$partner_id}&config_id={$config_id}&{$urlAppendParams}";
+  var widgetURL = "{$base_url}/js/{$widget_name}?one_widget_node={$node_dom}&devkey={$widgetkey}&partner={$partner_id}&config_id={$config_id}&{$urlAppendParams}&callback_url={$callback_url}";
   // Load the widget.
   document.write('<script type="text/javascript" src="', widgetURL, '"><\/script>');
 </script>

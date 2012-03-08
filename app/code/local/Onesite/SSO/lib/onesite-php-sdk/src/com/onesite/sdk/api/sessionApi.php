@@ -211,6 +211,7 @@ class onesite_sdk_api_sessionApi extends onesite_sdk_api
 	public function logout($session)
 	{		
 		try {
+			
 			$params = array();
 			
 			// Cascade through the most optimal variables.

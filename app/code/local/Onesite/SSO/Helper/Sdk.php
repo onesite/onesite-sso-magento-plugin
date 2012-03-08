@@ -59,7 +59,6 @@ class Onesite_SSO_Helper_Sdk extends Mage_Core_Helper_Abstract
 			$devkey = Mage::helper('sso/api')->getDevkey();
 			$this->_sdk = new onesite_sdk($devkey);
 			$this->_sdk->enableDebugging("Onesite_SSO_Model_Observer::debug");
-			$this->_sdk->getClient()->setEnv("preprod");
 		} catch (Exception $e) {
 			onesite_sso_debug($e->getMessage());
 		}

@@ -27,6 +27,21 @@
  */
 class ONEsite_SSO_IntegrationController extends Mage_Core_Controller_Front_Action
 {
+	public function connectionAction()
+	{
+		echo '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Loading...</title>
+	</head>
+	
+	<body>
+		<script type="text/javascript" src="http://fast1.onesite.com/resources/scripts/connection/receiver.js"></script>
+	</body>
+</html>';
+	}
+	
 	/**
 	 * Get the header of the page.
 	 *

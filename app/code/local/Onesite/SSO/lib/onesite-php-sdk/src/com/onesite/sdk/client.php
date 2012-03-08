@@ -126,6 +126,17 @@ class onesite_sdk_client
 	public function setUrl($url)
 	{
 		$this->_url = $url;
+		
+		// Make sure we have SSL enabled, or update the URL.
+		if (!extension_loaded("openssl")) {
+			$tmp = $this->_url;
+			$this->_url = str_replace("https://", "http://", $this->_url);
+			
+			if ($tmp !== $this->_url) {
+				onesite_sdk::debugLog("Updated URL due to no SSL module: $tmp -> {$this->_url}");
+			}
+		}
+		
 		return $this;
 	}
 	

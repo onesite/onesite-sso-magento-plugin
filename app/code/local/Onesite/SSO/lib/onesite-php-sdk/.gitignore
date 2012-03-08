@@ -1,0 +1,8 @@
+.DS_Store
+._*
+
+config.php
+.buildpath
+.project
+.settings
+

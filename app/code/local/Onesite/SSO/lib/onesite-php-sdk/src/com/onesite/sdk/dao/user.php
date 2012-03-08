@@ -31,15 +31,11 @@ class onesite_sdk_dao_user extends onesite_sdk_dao
 	{
 		// The public field mapping to the local properties.
 		$this->_public_fields = array(
-			'id'        => 'UserID',
-			'username'  => 'Username',
-			'email'     => 'email',
-			'domain'    => 'domain',
-			'nodeID'    => 'node_id',
-			'subdir'    => 'subdir',
-            'profile'   => 'profile',
-            'firstName' => 'first_name',
-			'lastName'  => 'last_name',
+			'id'       => 'UserID',
+			'username' => 'Username',
+			'email'    => 'Email',
+			'name'     => 'Name',
+			'profile'  => 'profile',
 		);
 	}
 	

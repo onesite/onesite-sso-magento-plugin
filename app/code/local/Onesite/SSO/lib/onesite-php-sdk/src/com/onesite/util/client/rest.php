@@ -22,7 +22,7 @@ class onesite_util_client_rest
 		onesite_sdk::debugLog("RESTful call to: $url", "rest.log");
 		
 		try {
-			$raw = file_get_contents($url);
+			$raw = @file_get_contents($url);
 			$response = $this->_parseJson($raw);
 						
 			if (!$raw || is_null($response) || !is_array($response)) {
