@@ -1,7 +1,6 @@
 # ONEsite Magento Plugin
 
 ## Overview
------------
 
 Magento is a highly trusted open source ecommerce application used for online product catalogs and other advanced commerce sites.  It is a very popular solution with a vibrant community.
 
@@ -13,7 +12,7 @@ ONEsite's primary integration offering for Magento is the Social Login SSO plugi
 
  * [Single Sign On] (http://developer.onesite.com/guide/single-sign-quick-start)
  * [Social Login] (http://developer.onesite.com/widget/social-login)
- * [Account Linking] (http://developer.onesite.com/widget/link-social-accounts#overlay-context=widgets)
+ * [Account Linking] (http://developer.onesite.com/widget/link-social-accounts)
  * [Review Widget] (http://developer.onesite.com/widget/reviews)
 
 ### Requirements
@@ -23,7 +22,6 @@ No additional software or hardware is required on your Magento servers.  However
 Request your free ONEsite devkey at: [http://onesite.com/node/ssoSignup]
 
 ## Plugin Setup
----------------
 
 ### Installation
 
@@ -60,8 +58,8 @@ If you have chosen to download the plugin from ONEsite or GitHub, please adhere 
 
  1. Download and save the plugin file
  2. Unzip the files
- 3. Upload the files to your server into the  /public/ base directory
- 4. Verify that the plugin exists in /public/app/code/Onesite/SSO/
+ 3. Upload the files to your server into the Magento base directory
+ 4. Verify that the plugin exists in app/code/Onesite/SSO/
 
 **Automated Installation**
 
@@ -73,7 +71,6 @@ If you have chosen to download the plugin from ONEsite or GitHub, please adhere 
  6. Paste the Extension Key into the Install New Extensions area and hit Install 
  
 ## Configuration
-----------------
 
 Once installation is complete, return to the Magento Admin Panel to configure the plugin.
 
@@ -98,8 +95,7 @@ After setting up the basics of the ONEsite SSO plugin, you will need to add in t
 ONEsite recommends placing the Social Login widget within the toolbar area of your site so that on any page load the users can quickly login or create a new account.  The process to replace the built in login system in Magento is a bit more complex but not difficult.  It will require access to your site's FTP.
 
  1. Connect to the FTP for your site.
- 2. Navigate to /public/skin/frontend/default.  These are the themes you begin with in Magento.
- 3. Create a new theme, for example /public/skin/frontend/default/onesite
+ 2. Navigate to app/design/frontend/default/default.
  4. Within this folder you need to add a layout folder.
  5. Save the following template within this folder as local.xml.
 
@@ -127,19 +123,6 @@ ONEsite recommends placing the Social Login widget within the toolbar area of yo
         &lt;/checkout_onepage_index&gt;
 &lt;/layout&gt;
 </code></pre>
-
-### Registration Forms
-
-The default registration form within Magento can be switched over to a ONEsite powered registration form.
-
- 1. Log in to the Magento Admin Panel
- 2. Navigate to System > Cache Management from the top navigation menu
- 3. Flush the Magento Cache and Cache Storage
- 4. Navigate to System > Configuration from the top navigation menu
- 5. Click on ONESITE > SSO in the left rail navigation menu (see screenshot below)
- 6. Click on the down area to the right of Options to open the page
- 7. Set Use ONEsite Registration Forms to Yes
- 8. Save your changes
 
 ### Reviews Widget
 
