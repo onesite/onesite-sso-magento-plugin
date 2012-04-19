@@ -138,7 +138,7 @@ The Reviews Widget allows visitors to your site to post reviews of your products
 	* Widget Instance Title - This title is for identification purposes only.  It does not display on the front end to your users.
  6. Click Add Layout Update
 	* Set Display On to All Product Types
-	* Set Block Reference to the location on the page you wish the Reviews Widget to display.  Our suggestion is "Tags List Before".  This will place the reviews widget above the Tags area at the bottom of the page.
+	* Set Block Reference to the location on the page you wish the Reviews Widget to display.  Our suggestion is "Main Content Area".  This adds the widget below the final item on the product page - tags.
  7. Save your Widget Instance
 
  

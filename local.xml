@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+        <sso_main_login>
+                <reference name="customer_form_login">
+                        <action method="setTemplate">
+                                <template>onesite-main/login.phtml</template>
+                        </action>
+                </reference>
+        </sso_main_login>
+        <sso_main_checkout>
+                <reference name="checkout.onepage.login">
+                        <action method="setTemplate">
+                                <template>onesite-main/checkout/login.phtml</template>
+                        </action>
+                </reference>
+        </sso_main_checkout>
+        <customer_account_login>
+                <update handle="sso_main_login"/>
+        </customer_account_login>
+        <checkout_onepage_index>
+                <update handle="sso_main_checkout"/>
+        </checkout_onepage_index>
+</layout>
